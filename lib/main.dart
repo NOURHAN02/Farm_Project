@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       // useInheritedMediaQuery: true,
       // locale: DevicePreview.locale(context),
       // builder: DevicePreview.appBuilder,
-      home: const DetailsHomeView(),
+      home: const NavigatorBarHome(),
     );
   }
 }

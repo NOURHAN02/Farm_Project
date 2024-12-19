@@ -20,6 +20,7 @@
   static String basketball='assets/images/basketball.svg';
   static String airCanditioning='assets/images/air_cand.svg';
   static String member='assets/images/member.svg';
+  static String filter='assets/images/Filter.svg';
 
 
 }
