@@ -32,7 +32,7 @@ class _CalendarViewState extends State<CalendarView> {
               Row(
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.chevron_left, color:kCalendarColor),
+                    icon: const Icon(Icons.chevron_left, color: kCalendarColor),
                     onPressed: () {
                       setState(() {
                         focusedDay = DateTime(
@@ -44,7 +44,8 @@ class _CalendarViewState extends State<CalendarView> {
                     },
                   ),
                   IconButton(
-                    icon: const Icon(Icons.chevron_right,color: kCalendarColor),
+                    icon:
+                        const Icon(Icons.chevron_right, color: kCalendarColor),
                     onPressed: () {
                       setState(() {
                         focusedDay = DateTime(
@@ -66,7 +67,8 @@ class _CalendarViewState extends State<CalendarView> {
           lastDay: DateTime(2100),
           focusedDay: focusedDay,
           selectedDayPredicate: (day) {
-            return selectedDays.any((selectedDay) => isSameDay(selectedDay, day));
+            return selectedDays
+                .any((selectedDay) => isSameDay(selectedDay, day));
           },
           onDaySelected: (selectedDay, focusedDay) {
             setState(() {
@@ -79,23 +81,20 @@ class _CalendarViewState extends State<CalendarView> {
             });
           },
           calendarStyle: const CalendarStyle(
-            todayDecoration:  BoxDecoration(),
-            todayTextStyle:  TextStyle(
+            todayDecoration: BoxDecoration(),
+            todayTextStyle: TextStyle(
               color: kCalendarColor,
               fontWeight: FontWeight.bold,
             ),
-
-            selectedDecoration:  BoxDecoration(),
-            selectedTextStyle:  TextStyle(
+            selectedDecoration: BoxDecoration(),
+            selectedTextStyle: TextStyle(
               color: kCalendarColor,
               fontWeight: FontWeight.bold,
             ),
           ),
           headerVisible: false,
         ),
-
       ],
     );
   }
 }
-

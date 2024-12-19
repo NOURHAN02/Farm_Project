@@ -10,11 +10,16 @@ class ContainerBackground extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15.0),
       child: InkWell(
-        onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>const DetailsHomeViewBody(),),);
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const DetailsHomeViewBody(),
+            ),
+          );
         },
         child: Container(
-           width: 317,
+          width: 317,
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -29,7 +34,7 @@ class ContainerBackground extends StatelessWidget {
               Radius.circular(15.0),
             ),
           ),
-          child:const FramerItem(),
+          child: const FramerItem(),
         ),
       ),
     );

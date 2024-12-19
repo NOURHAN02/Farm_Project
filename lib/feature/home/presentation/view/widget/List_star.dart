@@ -8,7 +8,7 @@ class ListStar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SizedBox(
+    return SizedBox(
       height: 30,
       child: ListView.builder(
         padding: EdgeInsets.zero,
@@ -16,13 +16,15 @@ class ListStar extends StatelessWidget {
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
-          Color ? starColor = index < 4 ? kSecondColor : null;
-          return SvgPicture.asset(AssetImages.star,color: starColor,height: 14,width: 14,);
+          Color? starColor = index < 4 ? kSecondColor : null;
+          return SvgPicture.asset(
+            AssetImages.star,
+            color: starColor,
+            height: 14,
+            width: 14,
+          );
         },
-
-
       ),
     );
   }
 }
-

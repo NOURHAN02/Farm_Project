@@ -6,12 +6,11 @@ class ItemImageDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.only(right: 5.0,left: 5.0),
+    return Padding(
+      padding: const EdgeInsets.only(right: 5.0, left: 5.0),
       child: AspectRatio(
-        aspectRatio: 3/1.90,
+        aspectRatio: 3 / 1.90,
         child: Container(
-
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -24,7 +23,10 @@ class ItemImageDetails extends StatelessWidget {
           ),
           child: ClipRRect(
             borderRadius: const BorderRadius.all(Radius.circular(12.0)),
-            child: Image.asset(AssetImages.framerBoolImage,fit: BoxFit.cover,),
+            child: Image.asset(
+              AssetImages.framerBoolImage,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),

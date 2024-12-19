@@ -13,7 +13,6 @@ class HomeViewBody extends StatelessWidget {
         children: [
           HomeAppBar(),
           ListFarm(),
-
         ],
       ),
     );

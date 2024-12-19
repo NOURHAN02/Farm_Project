@@ -8,7 +8,7 @@ class DetailsLocation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 5.0,bottom: 10.0),
+      padding: const EdgeInsets.only(top: 5.0, bottom: 10.0),
       child: Align(
         alignment: Alignment.topRight,
         child: Column(
@@ -23,15 +23,15 @@ class DetailsLocation extends StatelessWidget {
             ),
             Container(
               height: 232,
-              width: double.infinity,  // تأكد من أن العرض يملأ الشاشة بالكامل
+              width: double.infinity, // تأكد من أن العرض يملأ الشاشة بالكامل
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(AssetImages.mapLocationImage),
-                  fit: BoxFit.cover,  // لجعل الصورة تغطي كامل المساحة وتبقى متناسبة
+                  fit: BoxFit
+                      .cover, // لجعل الصورة تغطي كامل المساحة وتبقى متناسبة
                 ),
               ),
             )
-
           ],
         ),
       ),

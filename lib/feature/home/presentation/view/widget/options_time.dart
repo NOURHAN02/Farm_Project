@@ -14,7 +14,6 @@ class _OptionsTimeState extends State<OptionsTime> {
   @override
   Widget build(BuildContext context) {
     return Column(
-
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         RadioListTile(
@@ -25,7 +24,6 @@ class _OptionsTimeState extends State<OptionsTime> {
             style: Styles.textStyle20s.copyWith(color: kTextSecondColor),
             textDirection: TextDirection.rtl, // تغيير الاتجاه
           ),
-
           controlAffinity: ListTileControlAffinity.trailing,
           onChanged: (value) {
             setState(() {
@@ -48,7 +46,6 @@ class _OptionsTimeState extends State<OptionsTime> {
             style: Styles.textStyle20s.copyWith(color: kTextSecondColor),
             textDirection: TextDirection.rtl, // تغيير الاتجاه
           ),
-
           controlAffinity: ListTileControlAffinity.trailing,
           onChanged: (value) {
             setState(() {
@@ -71,7 +68,6 @@ class _OptionsTimeState extends State<OptionsTime> {
             style: Styles.textStyle20s.copyWith(color: kTextSecondColor),
             textDirection: TextDirection.rtl, // تغيير الاتجاه
           ),
-
           controlAffinity: ListTileControlAffinity.trailing,
           onChanged: (value) {
             setState(() {
@@ -86,7 +82,6 @@ class _OptionsTimeState extends State<OptionsTime> {
             return kUnSelectColor; // unselected circle color
           }),
         ),
-
       ],
     );
   }

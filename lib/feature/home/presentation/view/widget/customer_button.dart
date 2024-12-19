@@ -8,7 +8,7 @@ class CustomerButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top:20.0,bottom: 30.0),
+      padding: const EdgeInsets.only(top: 20.0, bottom: 30.0),
       child: SizedBox(
         width: 334,
         height: 56,

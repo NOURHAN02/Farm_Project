@@ -8,12 +8,11 @@ class ListFarm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        itemCount: 5,
+          itemCount: 5,
           scrollDirection: Axis.vertical,
-          itemBuilder: (context,index){
-        return const Center(child:  ContainerBackground());
-      }
-      ),
+          itemBuilder: (context, index) {
+            return const Center(child: ContainerBackground());
+          }),
     );
   }
 }

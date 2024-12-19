@@ -11,7 +11,8 @@ class ItemFeaturesFarm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 10.0,left: 8.0,right: 8.0,bottom: 10.0),
+      padding:
+          const EdgeInsets.only(top: 10.0, left: 8.0, right: 8.0, bottom: 10.0),
       child: Align(
         alignment: Alignment.centerLeft,
         child: Row(
@@ -24,7 +25,7 @@ class ItemFeaturesFarm extends StatelessWidget {
               child: Text(
                 itemFeatures.name,
                 style: Styles.textStyle12m,
-                overflow: TextOverflow.ellipsis,  // لمنع النص من التجاوز
+                overflow: TextOverflow.ellipsis, // لمنع النص من التجاوز
               ),
             ),
           ],

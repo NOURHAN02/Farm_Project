@@ -11,22 +11,29 @@ class TimeFarm extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Align(
       alignment: Alignment.topRight,
-      child:  Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Row(
             textDirection: TextDirection.rtl,
             children: [
-              Text("فترة الطشة",style: Styles.textStyle20,),
-              const SizedBox(width: 10,),
-              Icon(Icons.info_outline,color: kInfoColor,)
+              Text(
+                "فترة الطشة",
+                style: Styles.textStyle20,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Icon(
+                Icons.info_outline,
+                color: kInfoColor,
+              )
             ],
           ),
-           OptionsTime(),
+          OptionsTime(),
           CustomerButton(),
         ],
       ),
     );
   }
 }
-

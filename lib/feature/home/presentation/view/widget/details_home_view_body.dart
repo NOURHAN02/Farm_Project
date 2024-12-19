@@ -12,20 +12,24 @@ class DetailsHomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        actions: [Padding(
-          padding: const EdgeInsets.only(right: 30.0),
-          child: SvgPicture.asset(AssetImages.saveIcon,color: kTextPrimaryColor,),
-        )],
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 30.0),
+            child: SvgPicture.asset(
+              AssetImages.saveIcon,
+              color: kTextPrimaryColor,
+            ),
+          )
+        ],
       ),
-      body: const  SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           children: [
             ListImageDetails(),
             FarmDetails(),
             MoreDetailsFarm(),
-
           ],
         ),
       ),
